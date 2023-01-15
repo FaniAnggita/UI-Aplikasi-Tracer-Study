@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Dashboard Admin | Agenda Baru</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Admin | Trace Study</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block text-bg-dark sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link link-secondary " aria-current="page" href="index.html">
+                                <span data-feather="home" class="align-text-bottom"></span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary" href="master_alumni.html">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Master Alumni
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary" href="">
+                                <span data-feather="edit" class="align-text-bottom"></span>
+                                Kuesinoner
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary" href="institusi.html">
+                                <span data-feather="users" class="align-text-bottom"></span>
+                                Institusi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="agenda_baru.html">
+                                <span data-feather="calendar" class="align-text-bottom"></span>
+                                Agenda
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link-secondary dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span data-feather="info" class="align-text-bottom"></span>
+                                Info Acc
+                            </a>
+                            <ul class="dropdown-menu ms-4 ">
+                                <li><a class="dropdown-item" href="loker.html">Tambah Lowongan kerja</a></li>
+                                <li><a class="dropdown-item" href="tabel_loker.html">Data Lowongan kerja</a></li>
+                                <li><a class="dropdown-item" href="pengumuman.html">Pengumuman</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Akhir Sidebar -->
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+                <h2>Buat Agenda Baru</h2>
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="agendabaru" class="form-label">Nama Agenda</label>
+                        <input type="text" class="form-control" id="agendabaru">
+                    </div>
+                    <div class="col-6">
+                        <label for="tanggal" class="form-label">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal">
+                    </div>
+                    <div class="col-6">
+                        <label for="subjek" class="form-label">Subjek</label>
+                        <input type="text" class="form-control" id="subjek">
+                    </div>
+                    <div class="col-12">
+                        <label for="deskripsi" class="form-label">Deskripsi</label>
+                        <textarea name="" class="form-control" id="deskripsi"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <label for="galeri" class="form-label">Galeri</label>
+                        <input type="file" class="form-control" id="galeri">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="catatan" class="form-label">Catatan</label>
+                        <input type="text" class="form-control" id="catatan">
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Tambahkan</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
